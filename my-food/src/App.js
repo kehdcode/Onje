@@ -1,35 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
+import Navigation from './Components/NavBar'
 import './App.css';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, NavbarText } from 'reactstrap';
+import { DISHES } from './shared/dishes'
 import Menu from './Components/Menu'
 
-const App = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
-    
-      <div className="">
-      <Navbar color="light" light expand="md" className="success">
-        <NavbarBrand href="/">Oonje</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Menu</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Our Resturants</NavLink>
-            </NavItem>
-          </Nav>
-          <NavbarText>My Orders</NavbarText>
-        </Collapse>
-      </Navbar>
-
-      <Menu />
+class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      dishes: DISHES
+    }
+  }
+  render(){
+    return(
+      <div>
+        <Navigation />
+        <Menu dishes={this.state.dishes}/>
       </div>
-  
-  );
+    )
+  }
+
 }
+
 export default App;
