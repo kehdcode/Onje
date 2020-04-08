@@ -1,15 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  NavbarText
-} from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, NavbarText } from 'reactstrap';
+import Menu from './Components/Menu'
 
 const App = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,6 +26,8 @@ const App = (props) => {
           <NavbarText>My Orders</NavbarText>
         </Collapse>
       </Navbar>
+
+      <Menu />
       </div>
   
   );
