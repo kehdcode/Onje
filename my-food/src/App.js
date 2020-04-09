@@ -3,12 +3,13 @@ import Navigation from './Components/NavBar'
 import './App.css';
 import { DISHES } from './shared/dishes'
 import Menu from './Components/Menu'
+import Footer from './Components/Footer'
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      dishes: DISHES
+      dishes: DISHES.items
     }
   }
   render(){
@@ -16,6 +17,7 @@ class App extends Component {
       <div>
         <Navigation />
         <Menu dishes={this.state.dishes}/>
+        <Footer />
       </div>
     )
   }

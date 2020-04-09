@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 
-export const DISHES = [
+export const DISHES = {
+items:[
     {
         id: 0,
         name: 'Uthhappizza',
@@ -83,4 +84,7 @@ export const DISHES = [
         
     }
 
-]
+],
+addedItems:[],
+total: 0
+}

@@ -8,9 +8,15 @@ import { DISHES } from '../shared/dishes'
 class Menu extends Component {
     constructor(props){
         super(props)
+        
 
        
     }
+    addToCart=(id) => {
+        console.log(id);
+
+    }
+    
     render(){
         const menu = this.props.dishes.map((dish) =>{
             return(
@@ -21,7 +27,7 @@ class Menu extends Component {
                 <CardTitle>{dish.name}</CardTitle>
                 <CardText>{dish.description}</CardText>
                 <CardSubtitle> ${dish.price}</CardSubtitle>
-                <Button color="success">Place Order</Button>
+                <Button color="success" onClick={()=>this.addToCart(dish.id)}>Place Order</Button>
                 </CardBody>
                 </Card>
                 </div>
