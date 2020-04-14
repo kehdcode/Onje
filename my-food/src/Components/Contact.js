@@ -1,6 +1,6 @@
 import React,  { Component } from "react";
 import {Form, FormGroup, Label, Input, Col, Button, FormText} from 'reactstrap'
-
+import AbsoluteWrapper from './AbsoluteWrapper'
 
 
 
@@ -21,6 +21,7 @@ class Contact extends Component {
 
     render(){
         return(
+            <AbsoluteWrapper>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -57,7 +58,7 @@ class Contact extends Component {
                     </div>
                 </div>
             </div>
-            
+            </AbsoluteWrapper>         
         )
     }
 }

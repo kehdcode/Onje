@@ -11,7 +11,7 @@ const Navigation = (props) => {
 
   return (
     <div className="">
-    <Navbar color="" light expand="md" className="success">
+    <Navbar color="red" light expand="md" navbar-dark className="fixed-top success">
       <NavbarBrand href="/">Oonje</NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>

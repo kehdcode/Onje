@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { FaHome, FaEnvelopeOpen, FaPhone, FaFax, FaFacebookF, FaInstagram, FaTwitter, FaGooglePlusG, FaLinkedin} from "react-icons/fa";
+import AbsoluteWrapper from './AbsoluteWrapper'
 
 import './Home.css'
 
@@ -10,6 +11,7 @@ class Home extends Component {
     render(){
         return(
             <React.Fragment>
+                <AbsoluteWrapper>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12 main-body">
@@ -71,6 +73,7 @@ class Home extends Component {
                 </div>
 
             </div>
+            </AbsoluteWrapper>
             </React.Fragment>
 
         )
