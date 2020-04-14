@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,900&display=swap');
+
+.main-body {
+  background-image: url("/Food 6.jpg");
+  height: 60vh;
+  width: auto;
+  color: #fff;
+  border-radius: 0, 0, 10px;
+  font-size: x-large;
+  font-family: 'Lobster', cursive;
+  position: -webkit-sticky;
+  position: sticky;
+}
+.main-body button {
+  margin-left: 45%;
+}
+button >.arrow {
+  padding-left: 2px;
+  font-weight: 100;
+  
+}
+hr.under {
+  width: 30%;
+}
+
+div.reason-all {
+ 
+ height: 150vh;
+ 
+}
+div.reason {
+  background-color: rgb(243, 237, 237);
+  width: 50%;
+  z-index: 1;
+}

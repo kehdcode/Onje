@@ -12,9 +12,10 @@ class Menu extends Component {
 
        
     }
-    addToCart=(id) => {
+    addToCart=(id, price) => {
         console.log(id);
 
+        console.log(price);
     }
     
     render(){
@@ -27,7 +28,7 @@ class Menu extends Component {
                 <CardTitle>{dish.name}</CardTitle>
                 <CardText>{dish.description}</CardText>
                 <CardSubtitle> ${dish.price}</CardSubtitle>
-                <Button color="success" onClick={()=>this.addToCart(dish.id)}>Place Order</Button>
+                <Button color="success" onClick={()=>this.addToCart(dish.id, dish.price)}>Place Order</Button>
                 </CardBody>
                 </Card>
                 </div>

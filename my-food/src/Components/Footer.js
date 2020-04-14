@@ -13,7 +13,7 @@ function Footer (props) {
                     <div className="row mt-3">
 
                         <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <h6 className="text-uppercase font-weight-bold">Company name</h6>
+                        <h6 className="text-uppercase font-weight-bold">Oonje</h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" /> 
                         <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
                         consectetur
@@ -23,19 +23,19 @@ function Footer (props) {
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
                         
-                            <h6 className="text-uppercase font-weight-bold">Products</h6>
+                            <h6 className="text-uppercase font-weight-bold">Menu</h6>
                             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
                             <p>
-                            <a href="#!">MDBootstrap</a>
+                            <a href="#!">Mean Dish</a>
                             </p>
                             <p>
-                            <a href="#!">MDWordPress</a>
+                            <a href="#!">Dersert</a>
                             </p>
                             <p>
-                            <a href="#!">BrandFlow</a>
+                            <a href="#!">Appetizer</a>
                             </p>
                             <p>
-                            <a href="#!">Bootstrap Angular</a>
+                            <a href="#!">Others</a>
                             </p>
                         </div>
 
